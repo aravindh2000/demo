@@ -15,6 +15,9 @@ public class Ctrl {
     {
         CollectedUserData cud=new CollectedUserData();
         cud.setNameOfUser(userRequest.getUserName());
-        return "siva";
+        cud.setAmount(userRequest.getAmount());
+        cud.setChoices(userRequest.getChoices());
+        cud.setId(userRequest.getId());
+        return cud.toString();
     }
 }

@@ -9,14 +9,27 @@ public class UserRequest {
     String userName;
     int id;
     List<String> choices;
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
     BigDecimal amount;
 
-
-    public UserRequest(String userName, int id, List<String> choices) {
+    public UserRequest(String userName, int id, List<String> choices, BigDecimal amount) {
         this.userName = userName;
         this.id = id;
         this.choices = choices;
+        this.amount = amount;
     }
+
+
+
+
 
     public String getUserName() {
         return userName;
